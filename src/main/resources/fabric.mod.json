@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "kaassoufflemod",
+	"version": "${version}",
+	"name": "kaassoufflemod",
+	"description": "A mod that includes a cheesy snack.",
+	"authors": [
+		"Joons"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/kaassoufflemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.joons.kaassoufflemod.Kaassoufflemod"
+		],
+		"fabric-datagen": [
+			"net.joons.kaassoufflemod.KaassoufflemodDataGenerator"
+		],
+		"client": [
+			"net.joons.kaassoufflemod.KaassouffleModClient"
+		]
+	},
+	"mixins": [
+		"kaassoufflemod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
