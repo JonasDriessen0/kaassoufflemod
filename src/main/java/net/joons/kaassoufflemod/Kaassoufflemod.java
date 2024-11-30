@@ -2,6 +2,7 @@ package net.joons.kaassoufflemod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.joons.kaassoufflemod.block.ModBlocks;
 import net.joons.kaassoufflemod.item.ModItemGroups;
 import net.joons.kaassoufflemod.item.ModItems;
 import org.slf4j.Logger;
@@ -14,6 +15,7 @@ public class Kaassoufflemod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 		ModItemGroups.registerItemGroups();
 	}
 }
