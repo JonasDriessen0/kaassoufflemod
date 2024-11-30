@@ -3,7 +3,8 @@
 	"package": "net.joons.kaassoufflemod.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"DetectJump"
 	],
 	"injectors": {
 		"defaultRequire": 1
