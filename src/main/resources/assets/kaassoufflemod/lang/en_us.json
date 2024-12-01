@@ -1,8 +1,10 @@
 {
   "item.kaassoufflemod.kaassouffle": "Kaassoufflé",
+  "item.kaassoufflemod.raw_kaassouffle": "Raw_Kaassoufflé",
   "item.kaassoufflemod.bucket_of_raw_cheese": "Bucket Of Raw Cheese",
   "item.kaassoufflemod.cheese_slicer": "Cheese Slicer",
   "item.kaassoufflemod.cheese_slice": "Cheese Slice",
+  "item.kaassoufflemod.breadcrumbs": "Breadcrumbs",
   "item.kaassoufflemod.two_cheese_slices": "Two Cheese Slices",
   "block.kaassoufflemod.cheese_wheel": "Cheese Wheel",
   "block.kaassoufflemod.raw_cheese": "Raw Cheese",

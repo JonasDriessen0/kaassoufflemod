@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smoking",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.3,
+  "ingredient": {
+    "item": "kaassoufflemod:raw_kaassouffle"
+  },
+  "result": {
+    "id": "kaassoufflemod:kaassouffle"
+  }
+}

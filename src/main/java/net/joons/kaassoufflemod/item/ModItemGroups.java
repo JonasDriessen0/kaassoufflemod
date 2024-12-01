@@ -17,11 +17,13 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.kaassoufflemod.kaassouffle_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.KAASSOUFFLE);
+                        entries.add(ModItems.RAW_KAASSOUFFLE);
                         entries.add(ModBlocks.CHEESE_WHEEL);
                         entries.add(ModItems.CHEESE_SLICER);
                         entries.add(ModItems.CHEESE_SLICE);
                         entries.add(ModItems.TWO_CHEESE_SLICES);
                         entries.add(ModItems.BUCKET_OF_RAW_CHEESE);
+                        entries.add(ModItems.BREADCRUMBS);
                     }).build());
 
 

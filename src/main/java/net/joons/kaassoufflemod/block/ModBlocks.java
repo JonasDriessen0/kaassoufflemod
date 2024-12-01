@@ -6,6 +6,7 @@ import net.joons.kaassoufflemod.block.custom.CheeseWheelBlock;
 import net.joons.kaassoufflemod.block.custom.RawCheeseBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.CakeBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;

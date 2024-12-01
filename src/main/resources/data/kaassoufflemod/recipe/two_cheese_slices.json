@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "kaassoufflemod:cheese_slice"
+    },
+    {
+      "item": "kaassoufflemod:cheese_slice"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "kaassoufflemod:two_cheese_slices"
+  }
+}
