@@ -2,6 +2,7 @@ package net.joons.kaassoufflemod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.joons.kaassoufflemod.Kaassoufflemod;
+import net.joons.kaassoufflemod.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -16,7 +17,10 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.kaassoufflemod.kaassouffle_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.KAASSOUFFLE);
-                        entries.add(ModItems.CHEESE_WHEEL);
+                        entries.add(ModBlocks.CHEESE_WHEEL);
+                        entries.add(ModItems.CHEESE_SLICER);
+                        entries.add(ModItems.CHEESE_SLICE);
+                        entries.add(ModItems.TWO_CHEESE_SLICES);
                         entries.add(ModItems.BUCKET_OF_RAW_CHEESE);
                     }).build());
 

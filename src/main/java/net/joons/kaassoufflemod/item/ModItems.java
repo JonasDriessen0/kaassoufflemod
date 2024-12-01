@@ -12,9 +12,11 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item KAASSOUFFLE = registerItem("kaassouffle", new Item(new Item.Settings().food(ModFoodComponents.KAASSOUFFLE)));
 
-    public static final Item CHEESE_WHEEL = registerItem("cheese_wheel", new Item(new Item.Settings()));
-
     public static final Item BUCKET_OF_RAW_CHEESE = registerItem("bucket_of_raw_cheese", new CheeseBucketItem(new Item.Settings().maxCount(1)));
+
+    public static final Item CHEESE_SLICER = registerItem("cheese_slicer", new Item(new Item.Settings()));
+    public static final Item CHEESE_SLICE = registerItem("cheese_slice", new Item(new Item.Settings()));
+    public static final Item TWO_CHEESE_SLICES = registerItem("two_cheese_slices", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(Kaassoufflemod.MOD_ID, name), item);
