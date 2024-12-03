@@ -24,6 +24,7 @@ public class ModItemGroups {
                         entries.add(ModItems.TWO_CHEESE_SLICES);
                         entries.add(ModItems.BUCKET_OF_RAW_CHEESE);
                         entries.add(ModItems.BREADCRUMBS);
+                        entries.add(ModItems.THERMONUCLEAR_KAASSOUFFLE);
                     }).build());
 
 

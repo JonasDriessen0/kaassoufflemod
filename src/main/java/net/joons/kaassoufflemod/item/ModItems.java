@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item KAASSOUFFLE = registerItem("kaassouffle", new Item(new Item.Settings().food(ModFoodComponents.KAASSOUFFLE)));
     public static final Item RAW_KAASSOUFFLE = registerItem("raw_kaassouffle", new Item(new Item.Settings()));
+    public static final Item THERMONUCLEAR_KAASSOUFFLE = registerItem("thermonuclear_kaassouffle", new Item(new Item.Settings()));
 
     public static final Item BUCKET_OF_RAW_CHEESE = registerItem("bucket_of_raw_cheese", new CheeseBucketItem(new Item.Settings().maxCount(1)));
 
