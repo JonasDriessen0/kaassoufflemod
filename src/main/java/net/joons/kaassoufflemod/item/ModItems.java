@@ -3,6 +3,8 @@ package net.joons.kaassoufflemod.item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.joons.kaassoufflemod.Kaassoufflemod;
 import net.joons.kaassoufflemod.item.custom.CheeseBucketItem;
+import net.minecraft.item.ArmorItem;
+import net.minecraft.item.ArmorMaterials;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -20,6 +22,10 @@ public class ModItems {
     public static final Item CHEESE_SLICE = registerItem("cheese_slice", new Item(new Item.Settings()));
     public static final Item TWO_CHEESE_SLICES = registerItem("two_cheese_slices", new Item(new Item.Settings()));
     public static final Item BREADCRUMBS = registerItem("breadcrumbs", new Item(new Item.Settings()));
+
+    public static final Item CLOGS = registerItem("clogs",
+            new ArmorItem(ModArmorMaterials.CLOGS_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(Kaassoufflemod.MOD_ID, name), item);
