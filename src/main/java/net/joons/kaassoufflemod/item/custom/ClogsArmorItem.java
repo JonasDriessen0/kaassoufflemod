@@ -30,13 +30,17 @@ public class ClogsArmorItem extends ArmorItem implements GeoItem {
         super(material, type, settings);
     }
 
+
+
     @Override
     public void createGeoRenderer(Consumer<GeoRenderProvider> consumer) {
         consumer.accept(new GeoRenderProvider() {
             private GeoArmorRenderer<?> renderer;
 
             @Override
-            public <T extends LivingEntity> BipedEntityModel<?> getGeoArmorRenderer(@Nullable T livingEntity, ItemStack itemStack, @Nullable EquipmentSlot equipmentSlot, @Nullable BipedEntityModel<T> original) {
+            public <T extends LivingEntity> BipedEntityModel<?> getGeoArmorRenderer(@Nullable T livingEntity, ItemStack itemStack,
+                                                                                    @Nullable EquipmentSlot equipmentSlot,
+                                                                                    @Nullable BipedEntityModel<T> original) {
                 if (this.renderer == null) {
                     this.renderer = new ClogsArmorRenderer();
                 }
@@ -57,6 +61,6 @@ public class ClogsArmorItem extends ArmorItem implements GeoItem {
 
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {
-        return null;
+        return this.cache;
     }
 }

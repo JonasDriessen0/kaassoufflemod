@@ -3,6 +3,7 @@ package net.joons.kaassoufflemod.item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.joons.kaassoufflemod.Kaassoufflemod;
 import net.joons.kaassoufflemod.item.custom.CheeseBucketItem;
+import net.joons.kaassoufflemod.item.custom.ClogsArmorItem;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterials;
 import net.minecraft.item.Item;
@@ -24,7 +25,7 @@ public class ModItems {
     public static final Item BREADCRUMBS = registerItem("breadcrumbs", new Item(new Item.Settings()));
 
     public static final Item CLOGS = registerItem("clogs",
-            new ArmorItem(ModArmorMaterials.CLOGS_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+            new ClogsArmorItem(ModArmorMaterials.CLOGS_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
 
     private static Item registerItem(String name, Item item){

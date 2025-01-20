@@ -8,12 +8,12 @@ import net.joons.kaassoufflemod.item.custom.ClogsArmorItem;
 public class ClogsArmorModel extends GeoModel<ClogsArmorItem> {
     @Override
     public Identifier getModelResource(ClogsArmorItem object) {
-        return Identifier.of(Kaassoufflemod.MOD_ID, "geo/armor/clogs.geo.json");
+        return Identifier.of(Kaassoufflemod.MOD_ID, "geo/item/armor/clogs.geo.json");
     }
 
     @Override
     public Identifier getTextureResource(ClogsArmorItem object) {
-        return Identifier.of(Kaassoufflemod.MOD_ID, "textures/armor/clogs_layer_1.png");
+        return Identifier.of(Kaassoufflemod.MOD_ID, "textures/item/armor/clogs_texture.png");
     }
 
     @Override

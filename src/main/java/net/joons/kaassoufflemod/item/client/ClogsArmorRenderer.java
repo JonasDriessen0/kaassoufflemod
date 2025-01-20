@@ -8,6 +8,6 @@ import net.joons.kaassoufflemod.item.custom.ClogsArmorItem;
 
 public class ClogsArmorRenderer extends GeoArmorRenderer<ClogsArmorItem> {
     public ClogsArmorRenderer() {
-        super(new DefaultedItemGeoModel<>(Identifier.of(Kaassoufflemod.MOD_ID, "armor/clogs"))); // Using DefaultedItemGeoModel like this puts our 'location' as item/armor/example armor in the assets folders.
+        super(new ClogsArmorModel()); // Using DefaultedItemGeoModel like this puts our 'location' as item/armor/example armor in the assets folders.
     }
 }
