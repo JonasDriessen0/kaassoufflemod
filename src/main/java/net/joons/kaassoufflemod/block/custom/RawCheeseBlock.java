@@ -1,6 +1,7 @@
 package net.joons.kaassoufflemod.block.custom;
 
 import net.joons.kaassoufflemod.block.ModBlocks;
+import net.joons.kaassoufflemod.item.ModItemGroups;
 import net.joons.kaassoufflemod.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -55,7 +56,7 @@ public class RawCheeseBlock extends Block {
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if (!world.isClient && entity instanceof PlayerEntity player) {
             ItemStack boots = player.getEquippedStack(EquipmentSlot.FEET);
-            if(boots.getItem() == Items.IRON_BOOTS){
+            if(boots.getItem() == ModItems.CLOGS){
                 world.setBlockState(pos, ModBlocks.CHEESE_WHEEL.getDefaultState());
             }
         }

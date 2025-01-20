@@ -1,3 +1,6 @@
 {
-  "parent": "kaassoufflemod:block/raw_cheese"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "kaassoufflemod:item/clogs_item"
+  }
 }
