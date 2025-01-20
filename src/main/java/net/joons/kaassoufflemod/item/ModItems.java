@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.joons.kaassoufflemod.Kaassoufflemod;
 import net.joons.kaassoufflemod.item.custom.CheeseBucketItem;
 import net.joons.kaassoufflemod.item.custom.ClogsArmorItem;
+import net.joons.kaassoufflemod.item.custom.SpoonItem;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -17,6 +18,9 @@ public class ModItems {
     public static final Item BUCKET_OF_RAW_CHEESE = registerItem("bucket_of_raw_cheese", new CheeseBucketItem(new Item.Settings().maxCount(1)));
 
     public static final Item CHEESE_SLICER = registerItem("cheese_slicer", new SwordItem(ToolMaterials.WOOD, new Item.Settings().
+            attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.WOOD, 3, -2.4f))));
+
+    public static final Item SPOON = registerItem("spoon", new SpoonItem(ToolMaterials.WOOD, new Item.Settings().
             attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.WOOD, 3, -2.4f))));
 
     public static final Item CHEESE_SLICE = registerItem("cheese_slice", new Item(new Item.Settings()));
