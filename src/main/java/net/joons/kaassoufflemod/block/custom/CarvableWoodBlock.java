@@ -20,15 +20,14 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
 public class CarvableWoodBlock extends CakeBlock {
-    // Define shapes for each bite state (7 states total, from 0 to 6 bites)
     protected static final VoxelShape[] SHAPES = new VoxelShape[]{
-            Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 16.0, 16.0),  // Full height (no bites)
-            Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 14.0, 16.0),  // 1 bite
-            Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 12.0, 16.0),  // 2 bites
-            Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 10.0, 16.0),  // 3 bites
-            Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 8.0, 16.0),   // 4 bites
-            Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 6.0, 16.0),   // 5 bites
-            Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 4.0, 16.0)    // 6 bites
+            Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 16.0, 13.0),  // Full height (no bites)
+            Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 14.0, 13.0),  // 1 bite
+            Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 12.0, 13.0),  // 2 bites
+            Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 10.0, 13.0),  // 3 bites
+            Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 8.0, 13.0),   // 4 bites
+            Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 6.0, 13.0),   // 5 bites
+            Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 4.0, 13.0)    // 6 bites
     };
 
     public CarvableWoodBlock(Settings settings) {
