@@ -46,7 +46,7 @@ public class CarvableWoodBlock extends CakeBlock {
             int bites = state.get(BITES);
             ItemStack heldItem = player.getStackInHand(Hand.MAIN_HAND);
 
-            if (heldItem.getItem() == ModItems.SPOON){
+            if ((heldItem.getItem() == ModItems.SPOON) || (heldItem.getItem() == ModItems.COMICALLY_LARGE_SPOON)){
                 if (bites < 6) {
                     world.playSound(null, pos, SoundEvents.BLOCK_WOOD_BREAK,
                             SoundCategory.BLOCKS, 1.0f, 1.0f);
@@ -64,7 +64,7 @@ public class CarvableWoodBlock extends CakeBlock {
             }
             return ActionResult.PASS;
         }
-        return ActionResult.CONSUME;
+        return ActionResult.PASS;
     }
 
     @Override
