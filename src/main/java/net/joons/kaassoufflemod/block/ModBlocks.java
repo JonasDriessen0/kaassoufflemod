@@ -2,6 +2,7 @@ package net.joons.kaassoufflemod.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.joons.kaassoufflemod.Kaassoufflemod;
+import net.joons.kaassoufflemod.block.custom.CarvableWoodBlock;
 import net.joons.kaassoufflemod.block.custom.CheeseWheelBlock;
 import net.joons.kaassoufflemod.block.custom.RawCheeseBlock;
 import net.minecraft.block.AbstractBlock;
@@ -23,6 +24,10 @@ public class ModBlocks {
     public static final Block CHEESE_WHEEL = registerBlock("cheese_wheel",
             new CheeseWheelBlock(AbstractBlock.Settings.create().strength(1f)
                     .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block CARVABLE_WOOD = registerBlock("carvable_wood_block",
+            new CarvableWoodBlock(AbstractBlock.Settings.create().strength(2f)
+                    .sounds(BlockSoundGroup.WOOD)));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
