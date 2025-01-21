@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.joons.kaassoufflemod.block.ModBlocks;
 import net.joons.kaassoufflemod.item.ModItemGroups;
 import net.joons.kaassoufflemod.item.ModItems;
+import net.joons.kaassoufflemod.event.BlockInteractionHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,5 +18,6 @@ public class Kaassoufflemod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModItemGroups.registerItemGroups();
+		BlockInteractionHandler.register();
 	}
 }
