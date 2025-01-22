@@ -26,8 +26,8 @@ public class CarvableWoodBlock extends CakeBlock {
             Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 12.0, 13.0),  // 2 bites
             Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 10.0, 13.0),  // 3 bites
             Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 8.0, 13.0),   // 4 bites
-            Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 6.0, 13.0),   // 5 bites
-            Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 4.0, 13.0)    // 6 bites
+            Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 5.0, 13.0),   // 5 bites
+            Block.createCuboidShape(3.0, 0.0, 3.0, 13.0, 3.0, 13.0)    // 6 bites
     };
 
     public CarvableWoodBlock(Settings settings) {
@@ -56,6 +56,9 @@ public class CarvableWoodBlock extends CakeBlock {
                     return ActionResult.SUCCESS;
                 } else {
                     // Break the block when fully carved (like cake)
+                    ItemStack clogs = new ItemStack(ModItems.CLOGS, 1);
+                    dropStack(world, pos, clogs);
+
                     world.removeBlock(pos, false);
                     world.playSound(null, pos, SoundEvents.BLOCK_WOOD_BREAK,
                             SoundCategory.BLOCKS, 1.0f, 1.0f);

@@ -4,12 +4,13 @@
     "particle": "minecraft:block/stripped_oak_log",
     "top": "minecraft:block/stripped_oak_log_top",
     "side": "minecraft:block/stripped_oak_log",
-    "bottom": "minecraft:block/stripped_oak_log_top"
+    "bottom": "minecraft:block/stripped_oak_log_top",
+    "clog": "kaassoufflemod:block/unpainted_clogs"
   },
   "elements": [
     {
       "from": [ 3, 0, 3 ],
-      "to": [ 13, 6, 13 ],
+      "to": [ 13, 5, 13 ],
       "faces": {
         "down":  { "texture": "#bottom", "cullface": "down" },
         "up":    { "texture": "#top",    "cullface": "up" },
@@ -17,6 +18,29 @@
         "south": { "texture": "#side",   "cullface": "south" },
         "west":  { "texture": "#side",   "cullface": "west" },
         "east":  { "texture": "#side",   "cullface": "east" }
+      }
+    },
+    {
+      "from": [4.9, 2.58437, 5.3858],
+      "to": [11.1, 12.68437, 10.3858],
+      "faces": {
+        "north": {"uv": [12, 8, 8, 0], "rotation": 180, "texture": "#clog"},
+        "east": {"uv": [0, 8, 8, 10], "rotation": 90, "texture": "#clog"},
+        "south": {"uv": [16, 0, 12, 8], "texture": "#clog"},
+        "west": {"uv": [8, 8, 0, 10], "rotation": 270, "texture": "#clog"},
+        "up": {"uv": [8, 8, 12, 10], "texture": "#clog"},
+        "down": {"uv": [8, 8, 12, 10], "rotation": 180, "texture": "#clog"}
+      }
+    },
+    {
+      "from": [5.1, 4.36684, 4.9729],
+      "to": [10.9, 8.46684, 6.9729],
+      "rotation": {"angle": -22.5, "axis": "x", "origin": [8, 6.13509, 7.25071]},
+      "faces": {
+        "north": {"uv": [6, 12.5, 3, 10], "rotation": 180, "texture": "#clog"},
+        "east": {"uv": [0, 13, 3, 14], "rotation": 90, "texture": "#clog"},
+        "west": {"uv": [6, 13, 9, 14], "rotation": 270, "texture": "#clog"},
+        "up": {"uv": [9, 13, 12, 14], "texture": "#clog"}
       }
     }
   ]
