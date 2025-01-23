@@ -26,7 +26,10 @@ public class ModItemGroups {
                         entries.add(ModItems.BREADCRUMBS);
                         entries.add(ModItems.THERMONUCLEAR_KAASSOUFFLE);
                         entries.add(ModItems.CLOGS);
+                        entries.add(ModBlocks.UNPAINTED_CLOG);
                         entries.add(ModItems.SPOON);
+                        entries.add(ModItems.COMICALLY_LARGE_SPOON);
+                        entries.add(ModBlocks.CARVABLE_WOOD);
                     }).build());
 
 

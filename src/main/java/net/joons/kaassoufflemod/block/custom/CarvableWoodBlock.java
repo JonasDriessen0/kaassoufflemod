@@ -1,5 +1,6 @@
 package net.joons.kaassoufflemod.block.custom;
 
+import net.joons.kaassoufflemod.block.ModBlocks;
 import net.joons.kaassoufflemod.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -56,7 +57,7 @@ public class CarvableWoodBlock extends CakeBlock {
                     return ActionResult.SUCCESS;
                 } else {
                     // Break the block when fully carved (like cake)
-                    ItemStack clogs = new ItemStack(ModItems.CLOGS, 1);
+                    ItemStack clogs = new ItemStack(ModBlocks.UNPAINTED_CLOG, 1);
                     dropStack(world, pos, clogs);
 
                     world.removeBlock(pos, false);

@@ -15,9 +15,7 @@ import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animatable.instance.SingletonAnimatableInstanceCache;
 import software.bernie.geckolib.animation.*;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
-
 import java.util.function.Consumer;
-import java.util.function.Supplier;
 
 public class ClogsArmorItem extends ArmorItem implements GeoItem {
     private final AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
@@ -25,8 +23,6 @@ public class ClogsArmorItem extends ArmorItem implements GeoItem {
     public ClogsArmorItem(RegistryEntry<ArmorMaterial> material, Type type, Settings settings) {
         super(material, type, settings);
     }
-
-
 
     @Override
     public void createGeoRenderer(Consumer<GeoRenderProvider> consumer) {

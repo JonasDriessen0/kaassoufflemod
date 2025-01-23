@@ -23,8 +23,9 @@ public class ModItems {
     public static final Item COMICALLY_LARGE_SPOON = registerItem("comically_large_spoon", new SpoonItem(ToolMaterials.WOOD, new Item.Settings().
             attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.WOOD, 3, -2.4f))));
 
-    public static final Item SPOON = registerItem("spoon", new SpoonItem(ToolMaterials.WOOD, new Item.Settings().
-            attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.WOOD, 3, -2.4f))));
+    public static final Item SPOON = registerItem("spoon", new Item(new Item.Settings()));
+
+    public static final Item PAINTBRUSH = registerItem("paintbrush", new Item(new Item.Settings()));
 
     public static final Item CHEESE_SLICE = registerItem("cheese_slice", new Item(new Item.Settings()));
     public static final Item TWO_CHEESE_SLICES = registerItem("two_cheese_slices", new Item(new Item.Settings()));
