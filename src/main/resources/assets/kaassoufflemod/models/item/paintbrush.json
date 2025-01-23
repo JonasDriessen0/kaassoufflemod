@@ -2,5 +2,13 @@
   "parent": "minecraft:item/handheld",
   "textures": {
     "layer0": "kaassoufflemod:item/paintbrush"
-  }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "kaassoufflemod:has_paint": 1
+      },
+      "model": "kaassoufflemod:item/paintbrush_with_paint"
+    }
+  ]
 }

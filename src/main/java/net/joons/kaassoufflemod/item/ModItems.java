@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.joons.kaassoufflemod.Kaassoufflemod;
 import net.joons.kaassoufflemod.item.custom.CheeseBucketItem;
 import net.joons.kaassoufflemod.item.custom.ClogsArmorItem;
+import net.joons.kaassoufflemod.item.custom.PaintbrushItem;
 import net.joons.kaassoufflemod.item.custom.SpoonItem;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -25,7 +26,7 @@ public class ModItems {
 
     public static final Item SPOON = registerItem("spoon", new Item(new Item.Settings()));
 
-    public static final Item PAINTBRUSH = registerItem("paintbrush", new Item(new Item.Settings()));
+    public static final Item PAINTBRUSH = registerItem("paintbrush", new PaintbrushItem(new Item.Settings()));
 
     public static final Item CHEESE_SLICE = registerItem("cheese_slice", new Item(new Item.Settings()));
     public static final Item TWO_CHEESE_SLICES = registerItem("two_cheese_slices", new Item(new Item.Settings()));
@@ -46,5 +47,4 @@ public class ModItems {
             fabricItemGroupEntries.add(KAASSOUFFLE);
         });
     }
-
 }
