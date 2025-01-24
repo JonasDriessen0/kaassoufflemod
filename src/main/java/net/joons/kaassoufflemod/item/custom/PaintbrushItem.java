@@ -1,6 +1,5 @@
 package net.joons.kaassoufflemod.item.custom;
 
-import net.joons.kaassoufflemod.Kaassoufflemod;
 import net.joons.kaassoufflemod.block.ModBlocks;
 import net.joons.kaassoufflemod.component.ModDataComponentTypes;
 import net.minecraft.block.Block;
@@ -13,7 +12,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class PaintbrushItem extends Item {
-
     public PaintbrushItem(Settings settings) {
         super(settings);
     }
@@ -30,11 +28,14 @@ public class PaintbrushItem extends Item {
             return ActionResult.SUCCESS;
         }
 
-        if (clickedBlock == ModBlocks.UNPAINTED_CLOG && Boolean.TRUE.equals(paintbrush.get(ModDataComponentTypes.TEXTURE_TYPE)))
-        {
-            paintbrush.remove(ModDataComponentTypes.TEXTURE_TYPE);
-            Kaassoufflemod.LOGGER.info("remove paint from brush");
-            return ActionResult.SUCCESS;
+        if (clickedBlock == ModBlocks.UNPAINTED_CLOG) {
+            if (Boolean.TRUE.equals(paintbrush.get(ModDataComponentTypes.TEXTURE_TYPE))) {
+                if (!world.isClient) {
+                    world.setBlockState(pos, ModBlocks.CLOG_BLOCK.getDefaultState());
+                    paintbrush.remove(ModDataComponentTypes.TEXTURE_TYPE);
+                }
+                return ActionResult.SUCCESS;
+            }
         }
 
         return ActionResult.PASS;

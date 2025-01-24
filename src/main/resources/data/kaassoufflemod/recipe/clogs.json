@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "kaassoufflemod:clog_block"
+    },
+    {
+      "item": "kaassoufflemod:clog_block"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "kaassoufflemod:clogs"
+  }
+}

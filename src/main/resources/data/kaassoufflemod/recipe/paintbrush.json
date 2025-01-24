@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:feather"
+    },
+    "B": {
+      "tag": "minecraft:planks"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "  #",
+    " B ",
+    "X  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "kaassoufflemod:paintbrush"
+  }
+}

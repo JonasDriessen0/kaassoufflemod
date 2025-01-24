@@ -28,6 +28,7 @@ public class ModItemGroups {
                         entries.add(ModItems.CLOGS);
                         entries.add(ModBlocks.UNPAINTED_CLOG);
                         entries.add(ModItems.SPOON);
+                        entries.add(ModItems.PAINTBRUSH);
                         entries.add(ModItems.COMICALLY_LARGE_SPOON);
                         entries.add(ModBlocks.CARVABLE_WOOD);
                     }).build());
