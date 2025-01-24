@@ -31,6 +31,8 @@ public class ModItemGroups {
                         entries.add(ModItems.PAINTBRUSH);
                         entries.add(ModItems.COMICALLY_LARGE_SPOON);
                         entries.add(ModBlocks.CARVABLE_WOOD);
+                        entries.add(ModBlocks.URANIUM_ORE);
+                        entries.add(ModBlocks.URANIUM_DEEPSLATE_ORE);
                     }).build());
 
 

@@ -35,6 +35,14 @@ public class ModBlocks {
             new CarvableWoodBlock(AbstractBlock.Settings.create().strength(2f)
                     .sounds(BlockSoundGroup.WOOD)));
 
+    public static final Block URANIUM_ORE = registerBlock("uranium_ore",
+            new Block(AbstractBlock.Settings.create().strength(4f)
+                    .requiresTool().sounds(BlockSoundGroup.STONE)));
+
+    public static final Block URANIUM_DEEPSLATE_ORE = registerBlock("uranium_deepslate_ore",
+            new Block(AbstractBlock.Settings.create().strength(4f)
+                    .requiresTool().sounds(BlockSoundGroup.STONE)));
+
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(Kaassoufflemod.MOD_ID, name), block);

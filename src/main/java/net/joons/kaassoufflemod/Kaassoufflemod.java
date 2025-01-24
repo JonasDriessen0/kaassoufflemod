@@ -8,6 +8,7 @@ import net.joons.kaassoufflemod.item.ModItemGroups;
 import net.joons.kaassoufflemod.item.ModItems;
 import net.joons.kaassoufflemod.event.BlockInteractionHandler;
 import net.joons.kaassoufflemod.util.ModModelPredicates;
+import net.joons.kaassoufflemod.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,5 +26,7 @@ public class Kaassoufflemod implements ModInitializer {
 		ModDataComponentTypes.registerDataComponentTypes();
 
 		ModModelPredicates.registerModelPredicates();
+
+		ModWorldGeneration.generateModWorldGen();
 	}
 }
