@@ -3,10 +3,15 @@
   "pools": [
     {
       "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "kaassoufflemod:clog_block"
+          "name": "kaassoufflemod:cheese_wheel"
         }
       ],
       "rolls": 1.0

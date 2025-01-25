@@ -28,6 +28,8 @@ public class ModItems {
 
     public static final Item PAINTBRUSH = registerItem("paintbrush", new PaintbrushItem(new Item.Settings()));
 
+    public static final Item RAW_URANIUM = registerItem("raw_uranium", new Item(new Item.Settings()));
+
     public static final Item CHEESE_SLICE = registerItem("cheese_slice", new Item(new Item.Settings()));
     public static final Item TWO_CHEESE_SLICES = registerItem("two_cheese_slices", new Item(new Item.Settings()));
     public static final Item BREADCRUMBS = registerItem("breadcrumbs", new Item(new Item.Settings()));
