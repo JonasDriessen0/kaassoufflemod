@@ -17,7 +17,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.URANIUM_ORE)
-                .add(ModBlocks.URANIUM_DEEPSLATE_ORE);
+                .add(ModBlocks.URANIUM_DEEPSLATE_ORE)
+                .add(ModBlocks.LEAD_ORE)
+                .add(ModBlocks.LEAD_DEEPSLATE_ORE);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(ModBlocks.CLOG_BLOCK)
@@ -26,5 +28,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.URANIUM_ORE)
                 .add(ModBlocks.URANIUM_DEEPSLATE_ORE);
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.LEAD_ORE)
+                .add(ModBlocks.LEAD_DEEPSLATE_ORE);
     }
 }

@@ -32,8 +32,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CLOG_BLOCK);
         addDrop(ModBlocks.UNPAINTED_CLOG);
 
-        addDrop(ModBlocks.URANIUM_ORE, oreDrops(ModBlocks.URANIUM_ORE, ModItems.RAW_URANIUM));
+        addDrop(ModBlocks.URANIUM_ORE, multipleOreDrops(ModBlocks.URANIUM_ORE, ModItems.RAW_URANIUM, 1, 2));
         addDrop(ModBlocks.URANIUM_DEEPSLATE_ORE, multipleOreDrops(ModBlocks.URANIUM_DEEPSLATE_ORE, ModItems.RAW_URANIUM, 1, 2));
+
+        addDrop(ModBlocks.LEAD_ORE, multipleOreDrops(ModBlocks.LEAD_ORE, ModItems.RAW_LEAD, 2, 8));
+        addDrop(ModBlocks.LEAD_DEEPSLATE_ORE, multipleOreDrops(ModBlocks.LEAD_DEEPSLATE_ORE, ModItems.RAW_LEAD, 2, 8));
 
     }
 

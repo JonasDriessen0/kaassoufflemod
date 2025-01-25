@@ -1,3 +1,5 @@
-// 1.21.1	2025-01-25T17:00:24.5577412	kaassoufflemod/
+// 1.21.1	2025-01-25T22:30:02.2690895	kaassoufflemod/
+371b699ddc1055d4efe71224b9199044d5f3a9d5 data\kaassoufflemod\worldgen\placed_feature\lead_ore_placed.json
 7eb402c5a0d45d8bae65df9bb226e80cabf52789 data\kaassoufflemod\worldgen\configured_feature\uranium_ore.json
 5fe5f6343984d6e0ac7e8c94826d74f9f15dba7d data\kaassoufflemod\worldgen\placed_feature\uranium_ore_placed.json
+5be15cbe1658d7146c2c16e729e89d54f519960f data\kaassoufflemod\worldgen\configured_feature\lead_ore.json
