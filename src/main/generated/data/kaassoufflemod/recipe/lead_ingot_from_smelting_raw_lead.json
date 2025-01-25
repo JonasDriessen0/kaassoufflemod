@@ -2,11 +2,12 @@
   "type": "minecraft:smelting",
   "category": "misc",
   "cookingtime": 200,
-  "experience": 0.3,
+  "experience": 0.25,
+  "group": "lead",
   "ingredient": {
-    "item": "kaassoufflemod:raw_kaassouffle"
+    "item": "kaassoufflemod:raw_lead"
   },
   "result": {
-    "id": "kaassoufflemod:kaassouffle"
+    "id": "kaassoufflemod:lead_ingot"
   }
 }

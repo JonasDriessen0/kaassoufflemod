@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_clog_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "kaassoufflemod:clog_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "kaassoufflemod:clogs"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_clog_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "kaassoufflemod:clogs"
+    ]
+  }
+}

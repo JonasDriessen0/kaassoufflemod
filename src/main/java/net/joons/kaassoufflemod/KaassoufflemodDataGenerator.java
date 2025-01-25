@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.joons.kaassoufflemod.datagen.ModBlockTagProvider;
 import net.joons.kaassoufflemod.datagen.ModLootTableProvider;
+import net.joons.kaassoufflemod.datagen.ModRecipeProvider;
 import net.joons.kaassoufflemod.datagen.ModRegistryDataGenerator;
 import net.joons.kaassoufflemod.world.ModConfiguredFeatures;
 import net.joons.kaassoufflemod.world.ModPlacedFeatures;
@@ -18,6 +19,7 @@ public class KaassoufflemodDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModRegistryDataGenerator::new);
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModBlockTagProvider::new);
+		pack.addProvider(ModRecipeProvider::new);
 	}
 
 	@Override

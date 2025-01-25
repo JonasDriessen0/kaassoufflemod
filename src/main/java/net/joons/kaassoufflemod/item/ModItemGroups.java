@@ -33,6 +33,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CARVABLE_WOOD);
                         entries.add(ModBlocks.URANIUM_ORE);
                         entries.add(ModBlocks.URANIUM_DEEPSLATE_ORE);
+                        entries.add(ModBlocks.LEAD_ORE);
+                        entries.add(ModBlocks.LEAD_DEEPSLATE_ORE);
+                        entries.add(ModItems.RAW_LEAD);
+                        entries.add(ModItems.LEAD_INGOT);
                     }).build());
 
 

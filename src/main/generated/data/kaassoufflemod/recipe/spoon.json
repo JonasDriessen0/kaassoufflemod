@@ -3,19 +3,19 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "kaassoufflemod:breadcrumbs"
+      "item": "minecraft:iron_ingot"
     },
     "X": {
-      "item": "kaassoufflemod:two_cheese_slices"
+      "item": "minecraft:iron_nugget"
     }
   },
   "pattern": [
-    " # ",
-    "#X#",
-    " # "
+    "  #",
+    " X ",
+    "X  "
   ],
   "result": {
     "count": 1,
-    "id": "kaassoufflemod:raw_kaassouffle"
+    "id": "kaassoufflemod:spoon"
   }
 }
