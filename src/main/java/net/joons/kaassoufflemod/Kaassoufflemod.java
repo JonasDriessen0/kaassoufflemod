@@ -25,8 +25,6 @@ public class Kaassoufflemod implements ModInitializer {
 
 		ModDataComponentTypes.registerDataComponentTypes();
 
-		ModModelPredicates.registerModelPredicates();
-
 		ModWorldGeneration.generateModWorldGen();
 	}
 }
