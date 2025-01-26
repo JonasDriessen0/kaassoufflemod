@@ -37,6 +37,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.LEAD_DEEPSLATE_ORE);
                         entries.add(ModItems.RAW_LEAD);
                         entries.add(ModItems.LEAD_INGOT);
+                        entries.add(ModItems.OBSIDIAN_DUST);
+                        entries.add(ModItems.STEEL_INGOT);
                     }).build());
 
 

@@ -33,6 +33,10 @@ public class ModItems {
     public static final Item RAW_LEAD = registerItem("raw_lead", new Item(new Item.Settings()));
     public static final Item LEAD_INGOT = registerItem("lead_ingot", new Item(new Item.Settings()));
 
+    public static final Item STEEL_INGOT = registerItem("steel_ingot", new Item(new Item.Settings()));
+
+    public static final Item OBSIDIAN_DUST = registerItem("obsidian_dust", new Item(new Item.Settings()));
+
     public static final Item CHEESE_SLICE = registerItem("cheese_slice", new Item(new Item.Settings()));
     public static final Item TWO_CHEESE_SLICES = registerItem("two_cheese_slices", new Item(new Item.Settings()));
     public static final Item BREADCRUMBS = registerItem("breadcrumbs", new Item(new Item.Settings()));

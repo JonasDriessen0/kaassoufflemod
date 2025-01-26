@@ -44,6 +44,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.RAW_KAASSOUFFLE),conditionsFromItem(ModItems.RAW_KAASSOUFFLE))
                 .offerTo(recipeExporter, Identifier.of(Kaassoufflemod.MOD_ID, "raw_kaassouffle_from_smoking"));
 
+        CookingRecipeJsonBuilder.createBlasting(Ingredient.ofItems(Items.IRON_INGOT),RecipeCategory.MISC,ModItems.STEEL_INGOT, 0.25f,100)
+                .criterion(hasItem(Items.IRON_INGOT),conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(recipeExporter, Identifier.of(Kaassoufflemod.MOD_ID, "steel_ingot_from_blasting"));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CHEESE_SLICER)
                 .pattern(" ##")
                 .pattern(" ##")
