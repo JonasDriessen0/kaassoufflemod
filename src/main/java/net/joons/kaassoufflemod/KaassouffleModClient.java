@@ -5,7 +5,6 @@ import net.joons.kaassoufflemod.entity.ModBlockEntityTypes;
 import net.joons.kaassoufflemod.entity.client.PressBlockRenderer;
 import net.joons.kaassoufflemod.util.ModModelPredicates;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
-import net.minecraft.client.render.block.entity.BlockEntityRendererFactory;
 
 public class KaassouffleModClient implements ClientModInitializer {
     @Override
