@@ -5,6 +5,6 @@
     64
   ],
   "textures": {
-    "particle": "item/press_texture"
+    "particle": "kaassoufflemod:block/press"
   }
 }
