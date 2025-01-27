@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.joons.kaassoufflemod.block.ModBlocks;
 import net.joons.kaassoufflemod.component.ModDataComponentTypes;
+import net.joons.kaassoufflemod.entity.ModBlockEntityTypes;
 import net.joons.kaassoufflemod.item.ModItemGroups;
 import net.joons.kaassoufflemod.item.ModItems;
 import net.joons.kaassoufflemod.event.BlockInteractionHandler;
@@ -26,5 +27,7 @@ public class Kaassoufflemod implements ModInitializer {
 		ModDataComponentTypes.registerDataComponentTypes();
 
 		ModWorldGeneration.generateModWorldGen();
+
+		ModBlockEntityTypes.initialize();
 	}
 }

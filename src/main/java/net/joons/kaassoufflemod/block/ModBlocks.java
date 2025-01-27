@@ -3,6 +3,7 @@ package net.joons.kaassoufflemod.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.joons.kaassoufflemod.Kaassoufflemod;
 import net.joons.kaassoufflemod.block.custom.*;
+import net.joons.kaassoufflemod.entity.PressBlockEntity;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.CakeBlock;
@@ -45,6 +46,10 @@ public class ModBlocks {
 
     public static final Block LEAD_ORE = registerBlock("lead_ore",
             new Block(AbstractBlock.Settings.create().strength(4f)
+                    .requiresTool().sounds(BlockSoundGroup.STONE)));
+
+    public static final Block PRESS = registerBlock("press",
+            new PressBlock(AbstractBlock.Settings.create().strength(4f)
                     .requiresTool().sounds(BlockSoundGroup.STONE)));
 
     public static final Block LEAD_DEEPSLATE_ORE = registerBlock("lead_deepslate_ore",
