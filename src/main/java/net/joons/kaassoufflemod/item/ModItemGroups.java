@@ -39,6 +39,10 @@ public class ModItemGroups {
                         entries.add(ModItems.LEAD_INGOT);
                         entries.add(ModItems.OBSIDIAN_DUST);
                         entries.add(ModItems.STEEL_INGOT);
+                        entries.add(ModItems.STICKY_PASTE);
+                        entries.add(ModItems.RUBBER);
+                        entries.add(ModItems.CIRCUIT_BOARD);
+                        entries.add(ModItems.REDSTONE_COMPONENTS);
                     }).build());
 
 

@@ -44,9 +44,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.RAW_KAASSOUFFLE),conditionsFromItem(ModItems.RAW_KAASSOUFFLE))
                 .offerTo(recipeExporter, Identifier.of(Kaassoufflemod.MOD_ID, "raw_kaassouffle_from_smoking"));
 
-        CookingRecipeJsonBuilder.createBlasting(Ingredient.ofItems(Items.IRON_INGOT),RecipeCategory.MISC,ModItems.STEEL_INGOT, 0.25f,100)
+        CookingRecipeJsonBuilder.createBlasting(Ingredient.ofItems(Items.IRON_INGOT),RecipeCategory.MISC,ModItems.STEEL_INGOT, 0.25f,200)
                 .criterion(hasItem(Items.IRON_INGOT),conditionsFromItem(Items.IRON_INGOT))
                 .offerTo(recipeExporter, Identifier.of(Kaassoufflemod.MOD_ID, "steel_ingot_from_blasting"));
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(ModItems.STICKY_PASTE),RecipeCategory.MISC,ModItems.RUBBER, 0.25f,200)
+                .criterion(hasItem(ModItems.STICKY_PASTE),conditionsFromItem(ModItems.STICKY_PASTE))
+                .offerTo(recipeExporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CHEESE_SLICER)
                 .pattern(" ##")
@@ -76,6 +80,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
                 .offerTo(recipeExporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CIRCUIT_BOARD)
+                .pattern(" X ")
+                .pattern("#B#")
+                .pattern(" X ")
+                .input('#', Items.COPPER_INGOT)
+                .input('X', Items.GREEN_DYE)
+                .input('B', Items.GOLD_INGOT)
+                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(recipeExporter);
+
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CLOGS)
                 .input(ModBlocks.CLOG_BLOCK)
                 .input(ModBlocks.CLOG_BLOCK)
@@ -91,6 +105,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BREADCRUMBS)
                 .input(Items.BREAD)
                 .criterion(hasItem(Items.BREAD), conditionsFromItem(Items.BREAD))
+                .offerTo(recipeExporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STICKY_PASTE, 2)
+                .input(Items.SLIME_BALL)
+                .input(ItemTags.COALS)
+                .criterion(hasItem(Items.SLIME_BALL), conditionsFromItem(Items.SLIME_BALL))
                 .offerTo(recipeExporter);
     }
 }

@@ -1,12 +1,12 @@
 {
-  "type": "minecraft:blasting",
+  "type": "minecraft:smelting",
   "category": "misc",
   "cookingtime": 200,
   "experience": 0.25,
   "ingredient": {
-    "item": "minecraft:iron_ingot"
+    "item": "kaassoufflemod:sticky_paste"
   },
   "result": {
-    "id": "kaassoufflemod:steel_ingot"
+    "id": "kaassoufflemod:rubber"
   }
 }

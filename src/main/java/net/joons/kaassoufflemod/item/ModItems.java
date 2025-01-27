@@ -30,6 +30,12 @@ public class ModItems {
 
     public static final Item RAW_URANIUM = registerItem("raw_uranium", new Item(new Item.Settings()));
 
+    public static final Item STICKY_PASTE = registerItem("sticky_paste", new Item(new Item.Settings()));
+    public static final Item RUBBER = registerItem("rubber", new Item(new Item.Settings()));
+
+    public static final Item CIRCUIT_BOARD = registerItem("circuit_board", new Item(new Item.Settings()));
+    public static final Item REDSTONE_COMPONENTS = registerItem("redstone_components", new Item(new Item.Settings()));
+
     public static final Item RAW_LEAD = registerItem("raw_lead", new Item(new Item.Settings()));
     public static final Item LEAD_INGOT = registerItem("lead_ingot", new Item(new Item.Settings()));
 

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:copper_ingot"
+    },
+    "B": {
+      "item": "minecraft:gold_ingot"
+    },
+    "X": {
+      "item": "minecraft:green_dye"
+    }
+  },
+  "pattern": [
+    " X ",
+    "#B#",
+    " X "
+  ],
+  "result": {
+    "count": 1,
+    "id": "kaassoufflemod:circuit_board"
+  }
+}
