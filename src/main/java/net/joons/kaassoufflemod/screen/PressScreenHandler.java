@@ -86,11 +86,12 @@ public class PressScreenHandler extends ScreenHandler {
 
     public int getInvertedScaledProgress() {
         int progress = this.propertyDelegate.get(0);
-        int maxProgress = this.propertyDelegate.get(1);  // Max Progress
-        int progressArrowSize = 23; // This is the width in pixels of your arrow
+        int maxProgress = this.propertyDelegate.get(1);
+        int progressArrowSize = 23;
 
-        // Subtract progress from maxProgress to reverse the direction
-        return maxProgress != 0 && progress != 0 ? (maxProgress - progress) * progressArrowSize / maxProgress : 0;
+        return maxProgress != 0 && progress != 0
+                ? (progress * progressArrowSize / maxProgress)
+                : 0;
     }
 
     @Override

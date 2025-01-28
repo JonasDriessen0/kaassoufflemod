@@ -39,7 +39,7 @@ public class PressScreen extends HandledScreen<PressScreenHandler> {
     private void renderProgressArrow(DrawContext context, int x, int y){
         if (handler.isCrafting()){
             context.drawTexture(TEXTURE, x + 65, y + 10, 176, 0, 8, handler.getScaledProgress());
-            context.drawTexture(TEXTURE, x + 65, y + 76, 176, 76, 8, handler.getInvertedScaledProgress());
+            context.drawTexture(TEXTURE, x + 65, y + (76 - handler.getScaledProgress()), 176, 76 - handler.getScaledProgress(), 8, handler.getScaledProgress());
         }
     }
 
