@@ -1,7 +1,7 @@
-package net.joons.kaassoufflemod.entity.client;
+package net.joons.kaassoufflemod.block.entity.client;
 
 import net.joons.kaassoufflemod.Kaassoufflemod;
-import net.joons.kaassoufflemod.entity.PressBlockEntity;
+import net.joons.kaassoufflemod.block.entity.PressBlockEntity;
 import net.minecraft.util.Identifier;
 import software.bernie.geckolib.model.GeoModel;
 

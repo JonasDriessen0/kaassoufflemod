@@ -4,10 +4,11 @@ import net.fabricmc.api.ModInitializer;
 
 import net.joons.kaassoufflemod.block.ModBlocks;
 import net.joons.kaassoufflemod.component.ModDataComponentTypes;
-import net.joons.kaassoufflemod.entity.ModBlockEntityTypes;
+import net.joons.kaassoufflemod.block.entity.ModBlockEntityTypes;
 import net.joons.kaassoufflemod.item.ModItemGroups;
 import net.joons.kaassoufflemod.item.ModItems;
 import net.joons.kaassoufflemod.event.BlockInteractionHandler;
+import net.joons.kaassoufflemod.screen.ModScreenHandlers;
 import net.joons.kaassoufflemod.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,6 +25,8 @@ public class Kaassoufflemod implements ModInitializer {
 		BlockInteractionHandler.register();
 
 		ModDataComponentTypes.registerDataComponentTypes();
+
+		ModScreenHandlers.registerScreenHandlers();
 
 		ModWorldGeneration.generateModWorldGen();
 
