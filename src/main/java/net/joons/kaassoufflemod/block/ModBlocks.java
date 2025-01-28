@@ -48,7 +48,7 @@ public class ModBlocks {
 
     public static final Block PRESS = registerBlock("press",
             new PressBlock(AbstractBlock.Settings.create().strength(4f)
-                    .requiresTool().sounds(BlockSoundGroup.STONE)));
+                    .sounds(BlockSoundGroup.STONE)));
 
     public static final Block LEAD_DEEPSLATE_ORE = registerBlock("lead_deepslate_ore",
             new Block(AbstractBlock.Settings.create().strength(4f)

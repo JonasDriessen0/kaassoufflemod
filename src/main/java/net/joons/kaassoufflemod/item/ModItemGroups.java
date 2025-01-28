@@ -43,6 +43,9 @@ public class ModItemGroups {
                         entries.add(ModItems.RUBBER);
                         entries.add(ModItems.CIRCUIT_BOARD);
                         entries.add(ModItems.REDSTONE_COMPONENTS);
+                        entries.add(ModItems.LEAD_PLATE);
+                        entries.add(ModItems.OBSIDIAN_INFUSED_INGOT);
+                        entries.add(ModItems.REINFORCED_INGOT);
                     }).build());
 
 

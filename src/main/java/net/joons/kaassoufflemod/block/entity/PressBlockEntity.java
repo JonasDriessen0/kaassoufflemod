@@ -9,6 +9,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.screen.PropertyDelegate;
@@ -94,6 +95,13 @@ public class PressBlockEntity extends BlockEntity implements GeoBlockEntity, Ext
         return this.cache;
     }
 
+    private static final ItemStack LEAD_PLATE = new ItemStack(ModItems.LEAD_PLATE);
+    private static final ItemStack OBSIDIAN_DUST = new ItemStack(ModItems.OBSIDIAN_DUST);
+    private static final ItemStack STEEL_INGOT = new ItemStack(ModItems.STEEL_INGOT);
+    private static final ItemStack LEAD_INGOT = new ItemStack(ModItems.LEAD_INGOT);
+    private static final ItemStack IRON_INGOT = new ItemStack(Items.IRON_INGOT);
+    private static final ItemStack OBSIDIAN_INFUSED_INGOT = new ItemStack(ModItems.OBSIDIAN_INFUSED_INGOT);
+
     public void tick(World world, BlockPos pos, BlockState state) {
         if (world.isClient()){
             return;
@@ -118,10 +126,32 @@ public class PressBlockEntity extends BlockEntity implements GeoBlockEntity, Ext
     }
 
     private void craftItem() {
-        this.removeStack(MAIN_INPUT_SLOT, 1);
-        ItemStack result = new ItemStack(ModItems.LEAD_INGOT);
+        ItemStack topInput = getStack(TOP_INPUT_SLOT);
+        ItemStack mainInput = getStack(MAIN_INPUT_SLOT);
+        ItemStack bottomInput = getStack(BOTTOM_INPUT_SLOT);
 
-        this.setStack(MAIN_INPUT_SLOT, new ItemStack(result.getItem(), getStack(MAIN_INPUT_SLOT).getCount() + result.getCount()));
+        if (topInput.getItem() == OBSIDIAN_DUST.getItem() &&
+                mainInput.getItem() == STEEL_INGOT.getItem() &&
+                bottomInput.getItem() == OBSIDIAN_DUST.getItem()) {
+            this.removeStack(TOP_INPUT_SLOT, 1);
+            this.removeStack(MAIN_INPUT_SLOT, 1);
+            this.removeStack(BOTTOM_INPUT_SLOT, 1);
+            ItemStack result = new ItemStack(ModItems.OBSIDIAN_INFUSED_INGOT);
+            this.setStack(MAIN_INPUT_SLOT, new ItemStack(result.getItem(), getStack(MAIN_INPUT_SLOT).getCount() + result.getCount()));
+        } else if (topInput.getItem() == IRON_INGOT.getItem() &&
+                mainInput.getItem() == OBSIDIAN_INFUSED_INGOT.getItem() &&
+                bottomInput.getItem() == IRON_INGOT.getItem()) {
+            this.removeStack(TOP_INPUT_SLOT, 1);
+            this.removeStack(MAIN_INPUT_SLOT, 1);
+            this.removeStack(BOTTOM_INPUT_SLOT, 1);
+            ItemStack result = new ItemStack(ModItems.REINFORCED_INGOT);
+            this.setStack(MAIN_INPUT_SLOT, new ItemStack(result.getItem(), getStack(MAIN_INPUT_SLOT).getCount() + result.getCount()));
+        } else if (mainInput.getItem() == LEAD_INGOT.getItem()) {
+            // Recipe 3: LEAD_INGOT in the middle (original recipe)
+            this.removeStack(MAIN_INPUT_SLOT, 1);
+            ItemStack result = new ItemStack(ModItems.LEAD_PLATE);
+            this.setStack(MAIN_INPUT_SLOT, new ItemStack(result.getItem(), getStack(MAIN_INPUT_SLOT).getCount() + result.getCount()));
+        }
     }
 
     private boolean hasCraftingFinished() {
@@ -133,10 +163,24 @@ public class PressBlockEntity extends BlockEntity implements GeoBlockEntity, Ext
     }
 
     private boolean hasRecipe() {
-        ItemStack result = new ItemStack(ModItems.LEAD_INGOT);
-        boolean hasInput = getStack(MAIN_INPUT_SLOT).getItem() == ModItems.RAW_LEAD;
+        ItemStack topInput = getStack(TOP_INPUT_SLOT);
+        ItemStack mainInput = getStack(MAIN_INPUT_SLOT);
+        ItemStack bottomInput = getStack(BOTTOM_INPUT_SLOT);
 
-        return hasInput;
+        // Recipe 1: OBSIDIAN_DUST on top and bottom, LEAD_INGOT in the middle
+        boolean recipe1 = topInput.getItem() == OBSIDIAN_DUST.getItem() &&
+                mainInput.getItem() == STEEL_INGOT.getItem() &&
+                bottomInput.getItem() == OBSIDIAN_DUST.getItem();
+
+        // Recipe 2: IRON_INGOT on top and bottom, OBSIDIAN_INFUSED_INGOT in the middle
+        boolean recipe2 = topInput.getItem() == IRON_INGOT.getItem() &&
+                mainInput.getItem() == OBSIDIAN_INFUSED_INGOT.getItem() &&
+                bottomInput.getItem() == IRON_INGOT.getItem();
+
+        // Recipe 3: LEAD_INGOT in the middle (original recipe)
+        boolean recipe3 = mainInput.getItem() == STEEL_INGOT.getItem();
+
+        return recipe1 || recipe2 || recipe3;
     }
 
     @Override
