@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "kaassoufflemod:circuit_board"
+    },
+    "B": {
+      "item": "kaassoufflemod:reinforced_ingot"
+    },
+    "H": {
+      "item": "kaassoufflemod:redstone_components"
+    },
+    "X": {
+      "item": "kaassoufflemod:high_quality_processor"
+    }
+  },
+  "pattern": [
+    " X ",
+    "#B#",
+    " H "
+  ],
+  "result": {
+    "count": 1,
+    "id": "kaassoufflemod:control_chip"
+  }
+}

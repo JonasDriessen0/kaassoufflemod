@@ -46,6 +46,8 @@ public class ModItemGroups {
                         entries.add(ModItems.LEAD_PLATE);
                         entries.add(ModItems.OBSIDIAN_INFUSED_INGOT);
                         entries.add(ModItems.REINFORCED_INGOT);
+                        entries.add(ModItems.HIGH_QUALITY_PROCESSOR);
+                        entries.add(ModItems.CONTROL_CHIP);
                     }).build());
 
 

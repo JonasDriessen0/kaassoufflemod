@@ -36,6 +36,8 @@ public class ModItems {
     public static final Item LEAD_PLATE = registerItem("lead_plate", new Item(new Item.Settings()));
     public static final Item OBSIDIAN_INFUSED_INGOT = registerItem("obsidian_infused_ingot", new Item(new Item.Settings()));
     public static final Item REINFORCED_INGOT = registerItem("reinforced_ingot", new Item(new Item.Settings()));
+    public static final Item HIGH_QUALITY_PROCESSOR = registerItem("high_quality_processor", new Item(new Item.Settings()));
+    public static final Item CONTROL_CHIP = registerItem("control_chip", new Item(new Item.Settings()));
 
     public static final Item CIRCUIT_BOARD = registerItem("circuit_board", new Item(new Item.Settings()));
     public static final Item REDSTONE_COMPONENTS = registerItem("redstone_components", new Item(new Item.Settings()));

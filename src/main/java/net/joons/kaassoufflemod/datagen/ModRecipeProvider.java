@@ -90,6 +90,27 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
                 .offerTo(recipeExporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.HIGH_QUALITY_PROCESSOR)
+                .pattern("X#X")
+                .pattern("#B#")
+                .pattern("X#X")
+                .input('#', Items.GOLD_NUGGET)
+                .input('X', Items.DIAMOND)
+                .input('B', ModItems.REINFORCED_INGOT)
+                .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CONTROL_CHIP)
+                .pattern(" X ")
+                .pattern("#B#")
+                .pattern(" H ")
+                .input('#', ModItems.CIRCUIT_BOARD)
+                .input('X', ModItems.HIGH_QUALITY_PROCESSOR)
+                .input('H', ModItems.REDSTONE_COMPONENTS)
+                .input('B', ModItems.REINFORCED_INGOT)
+                .criterion(hasItem(ModItems.CIRCUIT_BOARD), conditionsFromItem(ModItems.CIRCUIT_BOARD))
+                .offerTo(recipeExporter);
+
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CLOGS)
                 .input(ModBlocks.CLOG_BLOCK)
                 .input(ModBlocks.CLOG_BLOCK)

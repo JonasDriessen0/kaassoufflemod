@@ -1,5 +1,5 @@
-// 1.21.1	2025-01-27T00:57:01.0510587	kaassoufflemod/Tags for minecraft:block
+// 1.21.1	2025-01-29T14:39:39.7537418	kaassoufflemod/Tags for minecraft:block
 1a6540aa7cac1d5213b7aea048078b612ea20413 data\minecraft\tags\block\needs_iron_tool.json
 985389ce67b3489c4430000fc52372acd9fe4d8a data\minecraft\tags\block\mineable\pickaxe.json
-5c5e7b8492e59c6b9c8c1358cc338a6d9181cae2 data\minecraft\tags\block\needs_diamond_tool.json
 c3a8c58c9cbca4118a6150fc4f56f8100001eff6 data\minecraft\tags\block\mineable\axe.json
+5c5e7b8492e59c6b9c8c1358cc338a6d9181cae2 data\minecraft\tags\block\needs_diamond_tool.json
