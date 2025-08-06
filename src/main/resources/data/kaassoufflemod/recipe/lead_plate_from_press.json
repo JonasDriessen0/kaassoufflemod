@@ -1,0 +1,9 @@
+{
+  "type": "kaassoufflemod:press",
+  "main_ingredient": {
+    "item": "kaassoufflemod:lead_ingot"
+  },
+  "result": {
+    "id": "kaassoufflemod:lead_plate"
+  }
+}

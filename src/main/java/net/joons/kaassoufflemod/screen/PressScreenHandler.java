@@ -29,7 +29,7 @@ public class PressScreenHandler extends ScreenHandler {
                               BlockEntity blockEntity, PropertyDelegate arrayPropertyDelegate) {
 
         super(ModScreenHandlers.PRESS_SCREEN_HANDLER, syncId);
-        checkSize(((Inventory) blockEntity), 3);
+        checkSize(((Inventory) blockEntity), 4);
         this.inventory = ((Inventory) blockEntity);
         inventory.onOpen(playerInventory.player);
         this.propertyDelegate = arrayPropertyDelegate;
@@ -38,6 +38,7 @@ public class PressScreenHandler extends ScreenHandler {
         this.addSlot(new Slot(inventory, 0, 80, 11));
         this.addSlot(new Slot(inventory, 1, 80, 35));
         this.addSlot(new Slot(inventory, 2, 80, 59));
+        this.addSlot(new Slot(inventory, 3, 116, 35));
 
         addPlayerInventory(playerInventory);
         addPlayerHotbar(playerInventory);
