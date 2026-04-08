@@ -12,10 +12,10 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class SpoonItem extends SwordItem {
+public class SpoonItem extends MaceItem {
 
-    public SpoonItem(ToolMaterial toolMaterial, Settings settings) {
-        super(toolMaterial, settings);
+    public SpoonItem(Item.Settings settings) {
+        super(settings);
     }
 
     @Override

@@ -33,7 +33,7 @@ public record PressRecipe(Ingredient topIngredient, Ingredient mainIngredient, I
         ItemStack topStack = input.getStackInSlot(0);
         ItemStack mainStack = input.getStackInSlot(1);
         ItemStack bottomStack = input.getStackInSlot(2);
-        
+
         boolean topMatches = topIngredient.isEmpty()
                 ? topStack.isEmpty()
                 : topIngredient.test(topStack);

@@ -17,7 +17,6 @@ public class BlockInteractionHandler {
                     if (!world.isClient) {
                         world.setBlockState(pos, ModBlocks.CARVABLE_WOOD.getDefaultState());
 
-                        // Optional: Play axe stripping sound
                         world.playSound(null, pos,
                                 net.minecraft.sound.SoundEvents.ITEM_AXE_STRIP,
                                 net.minecraft.sound.SoundCategory.BLOCKS,
